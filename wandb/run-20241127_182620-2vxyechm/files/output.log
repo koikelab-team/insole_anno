@@ -1,0 +1,20 @@
+Epoch [1/100]: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 26/26 [00:00<00:00, 119.82it/s, loss=0.309]
+Traceback (most recent call last):
+  File "/mnt/hdd/pengy/insole_anno/train.py", line 82, in <module>
+    train(model, train_loader, test_loader, criterion, optimizer, num_epochs=num_epochs, device="cuda:0" if torch.cuda.is_available() else "cpu")
+  File "/mnt/hdd/pengy/insole_anno/train.py", line 38, in train
+    test(model, test_loader, criterion, device)
+  File "/mnt/hdd/pengy/insole_anno/train.py", line 51, in test
+    log_results(y, outputs, i)
+  File "/mnt/hdd/pengy/insole_anno/tools.py", line 114, in log_results
+    axs[0].imshow(insole.T, aspect='auto')
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/matplotlib/__init__.py", line 1473, in inner
+    return func(
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 5895, in imshow
+    im.set_data(X)
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/matplotlib/image.py", line 729, in set_data
+    self._A = self._normalize_image_array(A)
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/matplotlib/image.py", line 697, in _normalize_image_array
+    raise TypeError(f"Invalid shape {A.shape} for image data")
+TypeError: Invalid shape (32, 32, 16) for image data
+Epoch 1/100, Loss: 0.43438022755659544

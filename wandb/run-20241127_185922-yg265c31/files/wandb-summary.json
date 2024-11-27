@@ -1,0 +1,1 @@
+{"train loss": 0.07121664572220582, "_timestamp": 1732701836.524033, "_runtime": 273.84161710739136, "_step": 269, "train temporal loss": 0.016429954351714023, "val loss": 0.059712222777307034, "val temporal loss": 0.007141230977140367, "_wandb": {"runtime": 274}}

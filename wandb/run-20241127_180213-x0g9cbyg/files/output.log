@@ -1,0 +1,9 @@
+Epoch [1/100]: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 26/26 [00:00<00:00, 127.10it/s, loss=0.276]
+Traceback (most recent call last):
+  File "/mnt/hdd/pengy/insole_anno/train.py", line 74, in <module>
+    train(model, train_loader, test_loader, criterion, optimizer, num_epochs=num_epochs, device="cuda:0" if torch.cuda.is_available() else "cpu")
+  File "/mnt/hdd/pengy/insole_anno/train.py", line 34, in train
+    plot_insole_heatmap_gif(y, outputs, f'./results/output_{epoch}.gif')
+  File "/mnt/hdd/pengy/insole_anno/tools.py", line 39, in plot_insole_heatmap_gif
+    for frame in range(sensor_values_y):  # Iterate over sequence length
+TypeError: only integer scalar arrays can be converted to a scalar index

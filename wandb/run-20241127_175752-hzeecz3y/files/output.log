@@ -1,0 +1,13 @@
+Epoch [1/100]: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 26/26 [00:00<00:00, 118.59it/s, loss=0.322]
+Traceback (most recent call last):
+  File "/mnt/hdd/pengy/insole_anno/train.py", line 74, in <module>
+    train(model, train_loader, test_loader, criterion, optimizer, num_epochs=num_epochs, device="cuda:0" if torch.cuda.is_available() else "cpu")
+  File "/mnt/hdd/pengy/insole_anno/train.py", line 34, in train
+    plot_insole_heatmap_gif(y, outputs, f'./results/output_{epoch}.gif')
+  File "/mnt/hdd/pengy/insole_anno/tools.py", line 30, in plot_insole_heatmap_gif
+    sensor_values_y = denormalize_output(sensor_values_y, min_npy='./dataset/insole_min.npy', max_npy='./dataset/insole_max.npy')
+  File "/mnt/hdd/pengy/insole_anno/tools.py", line 81, in denormalize_output
+    return (output + 1) / 2 * (max_values - min_values) + min_values
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/torch/_tensor.py", line 1087, in __array__
+    return self.numpy()
+TypeError: can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.

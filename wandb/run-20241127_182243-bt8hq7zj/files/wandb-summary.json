@@ -1,0 +1,1 @@
+{"train loss": 0.06378605632254711, "_timestamp": 1732699504.1891222, "_runtime": 140.85366916656494, "_step": 352, "test_gif": {"_type": "video-file", "sha256": "12a01091802847e93e351d63c947e86918fca5e26851e595a8fd0e6b43239795", "size": 121765, "path": "media/videos/test_gif_352_12a01091802847e93e35.gif"}, "val loss": 0.05088719299861363, "_wandb": {"runtime": 140}}

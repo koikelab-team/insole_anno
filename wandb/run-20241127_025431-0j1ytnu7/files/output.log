@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/mnt/hdd/pengy/insole_anno/train.py", line 67, in <module>
+    train(model, train_loader, criterion, optimizer, num_epochs=num_epochs, device="cuda:0" if torch.cuda.is_available() else "cpu")
+TypeError: train() missing 1 required positional argument: 'optimizer'

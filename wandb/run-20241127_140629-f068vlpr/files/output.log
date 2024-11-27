@@ -1,0 +1,11 @@
+Epoch [1/100]: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 26/26 [00:00<00:00, 133.59it/s, loss=0.461]
+Traceback (most recent call last):
+  File "/mnt/hdd/pengy/insole_anno/train.py", line 100, in <module>
+    train(model, train_loader, test_loader, criterion, optimizer, num_epochs=num_epochs, device="cuda:0" if torch.cuda.is_available() else "cpu")
+  File "/mnt/hdd/pengy/insole_anno/train.py", line 33, in train
+    log_results(x, outputs, epoch)
+  File "/mnt/hdd/pengy/insole_anno/train.py", line 71, in log_results
+    insole = denormalize_output(insole, min_npy='./dataset/pose_min.npy', max_npy='./dataset/pose_max.npy')
+  File "/mnt/hdd/pengy/insole_anno/train.py", line 65, in denormalize_output
+    return (output + 1) / 2 * (max_values - min_values) + min_values
+ValueError: operands could not be broadcast together with shapes (3,32,51) (17,3)

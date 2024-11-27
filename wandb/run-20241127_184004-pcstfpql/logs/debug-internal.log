@@ -1,0 +1,662 @@
+2024-11-27 18:40:04,727 INFO    StreamThr :3872862 [internal.py:wandb_internal():85] W&B internal server running at pid: 3872862, started at: 2024-11-27 18:40:04.727111
+2024-11-27 18:40:04,729 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status
+2024-11-27 18:40:04,730 INFO    WriterThread:3872862 [datastore.py:open_for_write():87] open: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/run-pcstfpql.wandb
+2024-11-27 18:40:04,732 DEBUG   SenderThread:3872862 [sender.py:send():379] send: header
+2024-11-27 18:40:04,732 DEBUG   SenderThread:3872862 [sender.py:send():379] send: run
+2024-11-27 18:40:05,206 INFO    SenderThread:3872862 [dir_watcher.py:__init__():211] watching files in: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files
+2024-11-27 18:40:05,206 INFO    SenderThread:3872862 [sender.py:_start_run_threads():1188] run started: pcstfpql with start time 1732700404.726941
+2024-11-27 18:40:05,209 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: check_version
+2024-11-27 18:40:05,210 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: check_version
+2024-11-27 18:40:05,285 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: run_start
+2024-11-27 18:40:05,316 DEBUG   HandlerThread:3872862 [system_info.py:__init__():26] System info init
+2024-11-27 18:40:05,317 DEBUG   HandlerThread:3872862 [system_info.py:__init__():41] System info init done
+2024-11-27 18:40:05,317 INFO    HandlerThread:3872862 [system_monitor.py:start():194] Starting system monitor
+2024-11-27 18:40:05,317 INFO    SystemMonitor:3872862 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-11-27 18:40:05,318 INFO    HandlerThread:3872862 [system_monitor.py:probe():214] Collecting system info
+2024-11-27 18:40:05,318 INFO    SystemMonitor:3872862 [interfaces.py:start():188] Started cpu monitoring
+2024-11-27 18:40:05,319 INFO    SystemMonitor:3872862 [interfaces.py:start():188] Started disk monitoring
+2024-11-27 18:40:05,320 INFO    SystemMonitor:3872862 [interfaces.py:start():188] Started gpu monitoring
+2024-11-27 18:40:05,320 INFO    SystemMonitor:3872862 [interfaces.py:start():188] Started memory monitoring
+2024-11-27 18:40:05,321 INFO    SystemMonitor:3872862 [interfaces.py:start():188] Started network monitoring
+2024-11-27 18:40:05,356 DEBUG   HandlerThread:3872862 [system_info.py:probe():152] Probing system
+2024-11-27 18:40:05,357 DEBUG   HandlerThread:3872862 [gitlib.py:_init_repo():56] git repository is invalid
+2024-11-27 18:40:05,357 DEBUG   HandlerThread:3872862 [system_info.py:probe():200] Probing system done
+2024-11-27 18:40:05,357 DEBUG   HandlerThread:3872862 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-101-generic-x86_64-with-glibc2.31', 'python': '3.10.14', 'heartbeatAt': '2024-11-27T09:40:05.356261', 'startedAt': '2024-11-27T09:40:04.721959', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/mnt/hdd/pengy/insole_anno/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'host': 'koikelab-workstation', 'username': 'pengy', 'executable': '/home/pengy/.conda/envs/torch/bin/python', 'cpu_count': 24, 'cpu_count_logical': 48, 'cpu_freq': {'current': 1529.1602083333335, 'min': 1500.0, 'max': 4200.0}, 'cpu_freq_per_core': [{'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1499.69, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 2200.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 2200.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}, {'current': 1500.0, 'min': 1500.0, 'max': 4200.0}], 'disk': {'/': {'total': 1832.2072448730469, 'used': 766.3731880187988}}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 62.238162994384766}}
+2024-11-27 18:40:05,357 INFO    HandlerThread:3872862 [system_monitor.py:probe():224] Finished collecting system info
+2024-11-27 18:40:05,357 INFO    HandlerThread:3872862 [system_monitor.py:probe():227] Publishing system info
+2024-11-27 18:40:05,358 DEBUG   HandlerThread:3872862 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-11-27 18:40:05,358 ERROR   HandlerThread:3872862 [system_info.py:_save_conda():223] Error saving conda packages: [Errno 2] No such file or directory: 'conda'
+Traceback (most recent call last):
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/wandb/sdk/internal/system/system_info.py", line 216, in _save_conda
+    subprocess.call(
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/subprocess.py", line 345, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2024-11-27 18:40:05,359 DEBUG   HandlerThread:3872862 [system_info.py:_save_conda():224] Saving conda packages done
+2024-11-27 18:40:05,359 INFO    HandlerThread:3872862 [system_monitor.py:probe():229] Finished publishing system info
+2024-11-27 18:40:05,361 DEBUG   SenderThread:3872862 [sender.py:send():379] send: files
+2024-11-27 18:40:05,361 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-11-27 18:40:05,431 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: python_packages
+2024-11-27 18:40:05,431 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: python_packages
+2024-11-27 18:40:05,432 DEBUG   SenderThread:3872862 [sender.py:send():379] send: telemetry
+2024-11-27 18:40:05,433 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-27 18:40:05,433 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: stop_status
+2024-11-27 18:40:05,435 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:06,014 INFO    wandb-upload_0:3872862 [upload_job.py:push():130] Uploaded file /tmp/tmp4w1snx8dwandb/3maq9uwi-wandb-metadata.json
+2024-11-27 18:40:06,128 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:06,130 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:06,131 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:06,131 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:06,207 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/conda-environment.yaml
+2024-11-27 18:40:06,208 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:06,208 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-metadata.json
+2024-11-27 18:40:06,208 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/requirements.txt
+2024-11-27 18:40:06,208 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:40:06,432 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:07,432 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:08,206 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:08,433 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:09,433 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:09,973 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:09,974 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:09,974 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:09,975 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:40:09,976 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:10,124 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:10,125 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:10,125 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:10,126 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:10,207 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:40:10,434 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:11,434 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:12,208 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:12,436 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:13,435 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:13,896 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:13,897 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:13,897 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:13,897 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:14,053 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:14,059 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:14,059 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:14,060 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:14,209 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:40:14,440 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:15,060 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:40:15,436 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:16,209 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:16,436 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:17,436 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:17,692 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:17,693 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:17,693 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:17,694 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:17,834 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:17,835 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:17,836 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:17,836 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:18,210 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:40:18,437 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:19,439 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:20,211 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:20,432 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-27 18:40:20,432 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: stop_status
+2024-11-27 18:40:20,473 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:20,647 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:40:21,439 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:21,638 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:21,639 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:21,639 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:21,640 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:21,774 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:21,775 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:21,775 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:21,775 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:22,212 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:22,212 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:40:22,439 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:23,439 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:24,212 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:24,439 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:25,439 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:25,477 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:25,478 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:25,478 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:25,480 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:25,616 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:25,616 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:25,617 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:25,617 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:26,213 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:26,213 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:40:26,440 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:26,617 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:40:27,440 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:28,214 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:28,440 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:29,440 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:29,448 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:29,449 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:29,449 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:29,449 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:29,586 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:29,587 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:29,587 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:29,588 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:30,214 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:30,215 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:40:30,440 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:31,440 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:32,215 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:32,434 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:40:32,440 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:33,441 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:33,448 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:33,449 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:33,449 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:33,450 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:33,637 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:33,664 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:33,664 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:33,665 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:34,216 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:34,216 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:40:34,441 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:35,433 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-27 18:40:35,433 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: stop_status
+2024-11-27 18:40:35,477 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:36,217 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:36,442 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:37,363 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:37,364 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:37,364 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:37,364 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:37,440 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:40:37,442 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:37,502 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:37,642 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:37,642 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:37,642 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:38,217 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:38,218 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:40:38,218 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/config.yaml
+2024-11-27 18:40:38,443 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:39,444 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:40,218 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:40,445 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:41,314 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:41,315 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:41,315 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:41,316 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:41,446 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:41,493 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:41,494 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:41,494 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:41,495 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:42,219 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:42,219 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:40:42,446 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:43,448 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:43,495 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:40:44,447 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:45,174 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:45,175 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:45,175 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:45,175 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:45,220 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:40:45,421 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:45,422 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:45,422 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:45,423 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:45,449 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:46,220 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:46,221 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:40:46,448 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:47,449 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:48,448 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:49,068 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:49,069 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:49,070 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:49,070 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:40:49,072 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:49,206 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:49,207 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:49,207 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:49,207 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:49,222 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:40:49,449 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:50,222 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:50,433 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-27 18:40:50,433 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: stop_status
+2024-11-27 18:40:50,473 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:51,449 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:52,477 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:52,987 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:52,988 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:52,988 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:52,989 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:53,124 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:53,125 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:53,125 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:53,125 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:53,223 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:40:53,474 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:54,126 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:40:54,223 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:54,476 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:55,475 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:56,476 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:56,793 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:56,794 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:56,794 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:56,795 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:56,930 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:40:56,956 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:40:56,956 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:40:56,956 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:40:57,224 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:40:57,476 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:58,225 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:40:58,476 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:59,477 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:40:59,957 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:41:00,479 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:00,739 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:00,740 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:00,740 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:00,740 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:00,875 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:00,876 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:00,876 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:00,877 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:01,227 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:41:01,476 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:02,228 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:02,477 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:03,477 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:04,477 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:04,567 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:04,568 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:04,569 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:04,570 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:04,703 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:04,804 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:04,804 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:04,805 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:05,229 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:41:05,321 DEBUG   SystemMonitor:3872862 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-11-27 18:41:05,322 DEBUG   SenderThread:3872862 [sender.py:send():379] send: stats
+2024-11-27 18:41:05,324 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:41:05,433 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-27 18:41:05,433 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: stop_status
+2024-11-27 18:41:05,477 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:06,229 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:06,478 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:07,487 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:08,487 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:08,526 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:08,527 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:08,527 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:08,528 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:08,663 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:08,664 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:08,664 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:08,664 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:09,230 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:41:09,488 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:10,230 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:10,439 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:41:10,489 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:11,488 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:12,402 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:12,403 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:12,403 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:12,404 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:12,488 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:12,543 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:12,544 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:12,545 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:12,545 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:13,232 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:41:13,489 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:14,232 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:14,490 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:15,439 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:41:15,490 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:16,391 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:16,392 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:16,392 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:16,394 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:16,492 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:16,597 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:16,598 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:16,598 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:16,599 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:17,233 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:41:17,490 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:18,233 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:18,491 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:19,587 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:20,368 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:20,369 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:20,369 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:20,370 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:20,433 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-27 18:41:20,434 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: stop_status
+2024-11-27 18:41:20,509 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:20,586 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:20,678 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:20,678 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:20,678 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:41:20,679 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:21,234 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:41:21,586 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:22,235 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:22,586 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:23,588 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:24,276 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:24,277 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:24,278 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:24,278 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:24,420 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:24,433 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:24,434 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:24,434 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:24,588 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:25,236 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:41:25,643 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:26,236 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:26,440 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:41:26,640 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:27,641 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:28,263 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:28,264 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:28,264 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:28,266 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:28,401 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:28,402 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:28,402 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:28,402 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:28,640 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:29,237 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:41:29,642 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:30,238 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:30,642 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:31,441 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:41:31,642 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:32,126 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:32,127 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:32,127 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:32,127 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:32,238 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:41:32,384 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:32,385 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:32,385 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:32,385 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:32,642 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:33,239 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:41:33,643 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:34,239 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:34,643 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:35,239 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:35,324 DEBUG   SenderThread:3872862 [sender.py:send():379] send: stats
+2024-11-27 18:41:35,435 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-27 18:41:35,436 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: stop_status
+2024-11-27 18:41:35,644 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:36,103 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:36,104 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:36,104 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:36,104 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:36,240 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:36,241 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:36,241 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:36,242 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:41:36,242 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:36,643 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:37,242 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:41:37,243 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:41:37,644 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:38,242 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:38,644 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:39,243 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:39,644 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:40,084 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:40,085 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:40,085 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:40,087 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:40,227 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:40,228 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:40,228 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:40,228 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:40,243 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:41:40,644 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:41,645 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:42,244 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:42,444 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:41:42,646 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:43,244 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:43,646 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:43,936 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:43,936 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:43,936 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:43,937 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:44,070 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:44,071 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:44,071 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:44,072 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:44,245 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:41:44,728 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:45,728 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:46,245 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:46,729 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:47,246 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:47,733 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:47,882 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:47,883 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:47,883 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:47,883 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:41:47,883 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:48,099 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:48,100 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:48,101 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:48,101 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:48,246 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:48,247 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:41:48,732 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:49,734 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:50,247 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:50,435 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-27 18:41:50,435 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: stop_status
+2024-11-27 18:41:50,732 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:51,247 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:51,732 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:51,938 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:51,939 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:51,939 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:51,939 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:52,081 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:52,082 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:52,082 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:52,082 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:52,248 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:52,248 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:41:52,732 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:53,083 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:41:53,733 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:54,248 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:54,733 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:55,249 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:55,733 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:55,806 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:55,807 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:55,807 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:55,807 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:55,964 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:56,034 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:56,034 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:56,034 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:41:56,249 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:56,249 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:41:56,734 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:57,734 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:58,250 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:58,735 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:59,035 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:41:59,250 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:41:59,734 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:41:59,917 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:41:59,918 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:41:59,918 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:41:59,918 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:42:00,060 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-27 18:42:00,061 DEBUG   SenderThread:3872862 [sender.py:send():379] send: history
+2024-11-27 18:42:00,061 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: summary_record
+2024-11-27 18:42:00,062 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:42:00,250 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:42:00,251 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:42:00,736 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:42:01,735 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:42:02,078 DEBUG   SenderThread:3872862 [sender.py:send():379] send: exit
+2024-11-27 18:42:02,078 INFO    SenderThread:3872862 [sender.py:send_exit():586] handling exit code: 255
+2024-11-27 18:42:02,078 INFO    SenderThread:3872862 [sender.py:send_exit():588] handling runtime: 116
+2024-11-27 18:42:02,080 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:42:02,080 INFO    SenderThread:3872862 [sender.py:send_exit():594] send defer
+2024-11-27 18:42:02,080 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: defer
+2024-11-27 18:42:02,081 INFO    HandlerThread:3872862 [handler.py:handle_request_defer():184] handle defer: 0
+2024-11-27 18:42:02,081 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: defer
+2024-11-27 18:42:02,081 INFO    SenderThread:3872862 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-11-27 18:42:02,081 INFO    SenderThread:3872862 [sender.py:transition_state():614] send defer: 1
+2024-11-27 18:42:02,081 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: defer
+2024-11-27 18:42:02,081 INFO    HandlerThread:3872862 [handler.py:handle_request_defer():184] handle defer: 1
+2024-11-27 18:42:02,082 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: defer
+2024-11-27 18:42:02,082 INFO    SenderThread:3872862 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-11-27 18:42:02,082 INFO    SenderThread:3872862 [sender.py:transition_state():614] send defer: 2
+2024-11-27 18:42:02,082 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: defer
+2024-11-27 18:42:02,082 INFO    HandlerThread:3872862 [handler.py:handle_request_defer():184] handle defer: 2
+2024-11-27 18:42:02,082 INFO    HandlerThread:3872862 [system_monitor.py:finish():203] Stopping system monitor
+2024-11-27 18:42:02,082 DEBUG   SystemMonitor:3872862 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-11-27 18:42:02,082 DEBUG   SystemMonitor:3872862 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-11-27 18:42:02,084 INFO    HandlerThread:3872862 [interfaces.py:finish():200] Joined cpu monitor
+2024-11-27 18:42:02,084 INFO    HandlerThread:3872862 [interfaces.py:finish():200] Joined disk monitor
+2024-11-27 18:42:02,182 INFO    HandlerThread:3872862 [interfaces.py:finish():200] Joined gpu monitor
+2024-11-27 18:42:02,182 INFO    HandlerThread:3872862 [interfaces.py:finish():200] Joined memory monitor
+2024-11-27 18:42:02,182 INFO    HandlerThread:3872862 [interfaces.py:finish():200] Joined network monitor
+2024-11-27 18:42:02,183 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: defer
+2024-11-27 18:42:02,183 INFO    SenderThread:3872862 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-11-27 18:42:02,183 INFO    SenderThread:3872862 [sender.py:transition_state():614] send defer: 3
+2024-11-27 18:42:02,183 DEBUG   SenderThread:3872862 [sender.py:send():379] send: stats
+2024-11-27 18:42:02,184 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: defer
+2024-11-27 18:42:02,184 INFO    HandlerThread:3872862 [handler.py:handle_request_defer():184] handle defer: 3
+2024-11-27 18:42:02,185 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: defer
+2024-11-27 18:42:02,186 INFO    SenderThread:3872862 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-11-27 18:42:02,186 INFO    SenderThread:3872862 [sender.py:transition_state():614] send defer: 4
+2024-11-27 18:42:02,186 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: defer
+2024-11-27 18:42:02,186 INFO    HandlerThread:3872862 [handler.py:handle_request_defer():184] handle defer: 4
+2024-11-27 18:42:02,186 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: defer
+2024-11-27 18:42:02,186 INFO    SenderThread:3872862 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-11-27 18:42:02,187 INFO    SenderThread:3872862 [sender.py:transition_state():614] send defer: 5
+2024-11-27 18:42:02,187 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: defer
+2024-11-27 18:42:02,187 INFO    HandlerThread:3872862 [handler.py:handle_request_defer():184] handle defer: 5
+2024-11-27 18:42:02,187 DEBUG   SenderThread:3872862 [sender.py:send():379] send: summary
+2024-11-27 18:42:02,188 INFO    SenderThread:3872862 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-27 18:42:02,188 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: defer
+2024-11-27 18:42:02,188 INFO    SenderThread:3872862 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-11-27 18:42:02,188 INFO    SenderThread:3872862 [sender.py:transition_state():614] send defer: 6
+2024-11-27 18:42:02,188 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: defer
+2024-11-27 18:42:02,188 INFO    HandlerThread:3872862 [handler.py:handle_request_defer():184] handle defer: 6
+2024-11-27 18:42:02,189 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: defer
+2024-11-27 18:42:02,189 INFO    SenderThread:3872862 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-11-27 18:42:02,189 INFO    SenderThread:3872862 [sender.py:transition_state():614] send defer: 7
+2024-11-27 18:42:02,189 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: status_report
+2024-11-27 18:42:02,189 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: defer
+2024-11-27 18:42:02,189 INFO    HandlerThread:3872862 [handler.py:handle_request_defer():184] handle defer: 7
+2024-11-27 18:42:02,189 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: defer
+2024-11-27 18:42:02,190 INFO    SenderThread:3872862 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-11-27 18:42:02,251 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:42:02,251 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:42:03,075 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-27 18:42:03,251 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:42:04,252 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:42:04,280 INFO    SenderThread:3872862 [sender.py:transition_state():614] send defer: 8
+2024-11-27 18:42:04,280 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: poll_exit
+2024-11-27 18:42:04,281 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: defer
+2024-11-27 18:42:04,281 INFO    HandlerThread:3872862 [handler.py:handle_request_defer():184] handle defer: 8
+2024-11-27 18:42:04,281 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: defer
+2024-11-27 18:42:04,281 INFO    SenderThread:3872862 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-11-27 18:42:04,281 INFO    SenderThread:3872862 [job_builder.py:build():440] Attempting to build job artifact
+2024-11-27 18:42:04,281 INFO    SenderThread:3872862 [job_builder.py:_get_source_type():580] no source found
+2024-11-27 18:42:04,281 INFO    SenderThread:3872862 [sender.py:transition_state():614] send defer: 9
+2024-11-27 18:42:04,282 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: defer
+2024-11-27 18:42:04,282 INFO    HandlerThread:3872862 [handler.py:handle_request_defer():184] handle defer: 9
+2024-11-27 18:42:04,282 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: defer
+2024-11-27 18:42:04,282 INFO    SenderThread:3872862 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-11-27 18:42:04,282 INFO    SenderThread:3872862 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-11-27 18:42:05,076 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-27 18:42:05,252 INFO    Thread-12 :3872862 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:42:05,253 INFO    SenderThread:3872862 [dir_watcher.py:finish():388] scan: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files
+2024-11-27 18:42:05,254 INFO    SenderThread:3872862 [dir_watcher.py:finish():402] scan save: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/conda-environment.yaml conda-environment.yaml
+2024-11-27 18:42:05,254 INFO    SenderThread:3872862 [dir_watcher.py:finish():402] scan save: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/requirements.txt requirements.txt
+2024-11-27 18:42:05,254 INFO    SenderThread:3872862 [dir_watcher.py:finish():402] scan save: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log output.log
+2024-11-27 18:42:05,254 INFO    SenderThread:3872862 [dir_watcher.py:finish():402] scan save: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json wandb-summary.json
+2024-11-27 18:42:05,258 INFO    SenderThread:3872862 [dir_watcher.py:finish():402] scan save: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/config.yaml config.yaml
+2024-11-27 18:42:05,258 INFO    SenderThread:3872862 [dir_watcher.py:finish():402] scan save: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-metadata.json wandb-metadata.json
+2024-11-27 18:42:05,258 INFO    SenderThread:3872862 [sender.py:transition_state():614] send defer: 10
+2024-11-27 18:42:05,258 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: poll_exit
+2024-11-27 18:42:05,264 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: defer
+2024-11-27 18:42:05,264 INFO    HandlerThread:3872862 [handler.py:handle_request_defer():184] handle defer: 10
+2024-11-27 18:42:05,267 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: defer
+2024-11-27 18:42:05,267 INFO    SenderThread:3872862 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-11-27 18:42:05,268 INFO    SenderThread:3872862 [file_pusher.py:finish():169] shutting down file pusher
+2024-11-27 18:42:05,666 INFO    wandb-upload_1:3872862 [upload_job.py:push():130] Uploaded file /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/requirements.txt
+2024-11-27 18:42:05,740 INFO    wandb-upload_3:3872862 [upload_job.py:push():130] Uploaded file /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/config.yaml
+2024-11-27 18:42:05,758 INFO    wandb-upload_2:3872862 [upload_job.py:push():130] Uploaded file /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/wandb-summary.json
+2024-11-27 18:42:05,844 INFO    wandb-upload_0:3872862 [upload_job.py:push():130] Uploaded file /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/files/output.log
+2024-11-27 18:42:06,044 INFO    Thread-11 (_thread_body):3872862 [sender.py:transition_state():614] send defer: 11
+2024-11-27 18:42:06,045 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: defer
+2024-11-27 18:42:06,045 INFO    HandlerThread:3872862 [handler.py:handle_request_defer():184] handle defer: 11
+2024-11-27 18:42:06,046 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: defer
+2024-11-27 18:42:06,046 INFO    SenderThread:3872862 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-11-27 18:42:06,046 INFO    SenderThread:3872862 [file_pusher.py:join():175] waiting for file pusher
+2024-11-27 18:42:06,046 INFO    SenderThread:3872862 [sender.py:transition_state():614] send defer: 12
+2024-11-27 18:42:06,046 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: defer
+2024-11-27 18:42:06,046 INFO    HandlerThread:3872862 [handler.py:handle_request_defer():184] handle defer: 12
+2024-11-27 18:42:06,047 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: defer
+2024-11-27 18:42:06,047 INFO    SenderThread:3872862 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-11-27 18:42:06,047 INFO    SenderThread:3872862 [file_stream.py:finish():601] file stream finish called
+2024-11-27 18:42:06,078 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-27 18:42:06,724 INFO    SenderThread:3872862 [file_stream.py:finish():605] file stream finish is done
+2024-11-27 18:42:06,724 INFO    SenderThread:3872862 [sender.py:transition_state():614] send defer: 13
+2024-11-27 18:42:06,724 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: poll_exit
+2024-11-27 18:42:06,725 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: defer
+2024-11-27 18:42:06,725 INFO    HandlerThread:3872862 [handler.py:handle_request_defer():184] handle defer: 13
+2024-11-27 18:42:06,726 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: defer
+2024-11-27 18:42:06,726 INFO    SenderThread:3872862 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-11-27 18:42:06,726 INFO    SenderThread:3872862 [sender.py:transition_state():614] send defer: 14
+2024-11-27 18:42:06,726 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: defer
+2024-11-27 18:42:06,726 INFO    HandlerThread:3872862 [handler.py:handle_request_defer():184] handle defer: 14
+2024-11-27 18:42:06,727 DEBUG   SenderThread:3872862 [sender.py:send():379] send: final
+2024-11-27 18:42:06,727 DEBUG   SenderThread:3872862 [sender.py:send():379] send: footer
+2024-11-27 18:42:06,727 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: defer
+2024-11-27 18:42:06,727 INFO    SenderThread:3872862 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-11-27 18:42:06,727 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-27 18:42:06,728 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: poll_exit
+2024-11-27 18:42:06,728 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: server_info
+2024-11-27 18:42:06,729 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: server_info
+2024-11-27 18:42:06,731 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-27 18:42:06,732 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: get_summary
+2024-11-27 18:42:06,732 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: sampled_history
+2024-11-27 18:42:06,733 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-27 18:42:06,903 DEBUG   SenderThread:3872862 [sender.py:send_request():406] send_request: poll_exit
+2024-11-27 18:42:06,904 INFO    MainThread:3872862 [wandb_run.py:_footer_history_summary_info():3988] rendering history
+2024-11-27 18:42:06,904 INFO    MainThread:3872862 [wandb_run.py:_footer_history_summary_info():4020] rendering summary
+2024-11-27 18:42:06,904 INFO    MainThread:3872862 [wandb_run.py:_footer_sync_info():3947] logging synced files
+2024-11-27 18:42:06,905 DEBUG   HandlerThread:3872862 [handler.py:handle_request():158] handle_request: shutdown
+2024-11-27 18:42:06,905 INFO    HandlerThread:3872862 [handler.py:finish():882] shutting down handler
+2024-11-27 18:42:07,732 INFO    WriterThread:3872862 [datastore.py:close():296] close: /mnt/hdd/pengy/insole_anno/wandb/run-20241127_184004-pcstfpql/run-pcstfpql.wandb
+2024-11-27 18:42:07,904 INFO    SenderThread:3872862 [sender.py:finish():1608] shutting down sender
+2024-11-27 18:42:07,904 INFO    SenderThread:3872862 [file_pusher.py:finish():169] shutting down file pusher
+2024-11-27 18:42:07,904 INFO    SenderThread:3872862 [file_pusher.py:join():175] waiting for file pusher
