@@ -26,3 +26,10 @@ config: {}
 2024-11-27 19:46:16,942 INFO    MainThread:4073594 [wandb_run.py:_redirect():2300] Wrapping output streams.
 2024-11-27 19:46:16,942 INFO    MainThread:4073594 [wandb_run.py:_redirect():2325] Redirects installed.
 2024-11-27 19:46:16,943 INFO    MainThread:4073594 [wandb_init.py:init():838] run started, returning control to user process
+2024-11-27 20:18:15,929 INFO    MainThread:4073594 [wandb_run.py:_finish():2109] finishing run ohicarip/insole-anno/s3zgodmn
+2024-11-27 20:18:15,929 INFO    MainThread:4073594 [wandb_run.py:_atexit_cleanup():2349] got exitcode: 0
+2024-11-27 20:18:15,929 INFO    MainThread:4073594 [wandb_run.py:_restore():2332] restore
+2024-11-27 20:18:15,929 INFO    MainThread:4073594 [wandb_run.py:_restore():2338] restore done
+2024-11-27 20:18:22,529 INFO    MainThread:4073594 [wandb_run.py:_footer_history_summary_info():3988] rendering history
+2024-11-27 20:18:22,530 INFO    MainThread:4073594 [wandb_run.py:_footer_history_summary_info():4020] rendering summary
+2024-11-27 20:18:22,536 INFO    MainThread:4073594 [wandb_run.py:_footer_sync_info():3947] logging synced files

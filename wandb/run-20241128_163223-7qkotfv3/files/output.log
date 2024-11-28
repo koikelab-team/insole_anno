@@ -1,0 +1,69 @@
+
+Epoch [1/100]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 26/26 [00:00<00:00, 27.18it/s, loss=1.36]
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([3, 32, 51])
+Epoch 1/100, Loss: 2.286561810053312
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+encoding src: torch.Size([16, 32, 51])
+Traceback (most recent call last):
+  File "/mnt/hdd/pengy/insole_anno/train.py", line 112, in <module>
+    train(model, train_loader, test_loader, criterion, optimizer, num_epochs=num_epochs, device="cuda:0" if torch.cuda.is_available() else "cpu")
+  File "/mnt/hdd/pengy/insole_anno/train.py", line 45, in train
+    test(model, test_loader, criterion, device)
+  File "/mnt/hdd/pengy/insole_anno/train.py", line 62, in test
+    log_results(y, outputs, i, is_test=True)
+  File "/mnt/hdd/pengy/insole_anno/tools.py", line 157, in log_results
+    plt.tight_layout(rect=[0, 0, 1, 0.96])
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2715, in tight_layout
+    gcf().tight_layout(pad=pad, h_pad=h_pad, w_pad=w_pad, rect=rect)
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/matplotlib/figure.py", line 3538, in tight_layout
+    engine.execute(self)
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/matplotlib/layout_engine.py", line 183, in execute
+    kwargs = get_tight_layout_figure(
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/matplotlib/_tight_layout.py", line 266, in get_tight_layout_figure
+    kwargs = _auto_adjust_subplotpars(fig, renderer,
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/matplotlib/_tight_layout.py", line 82, in _auto_adjust_subplotpars
+    bb += [martist._get_tightbbox_for_layout_only(ax, renderer)]
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/matplotlib/artist.py", line 1408, in _get_tightbbox_for_layout_only
+    return obj.get_tightbbox(*args, **{**kwargs, "for_layout_only": True})
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/matplotlib/_api/deprecation.py", line 457, in wrapper
+    return func(*args, **kwargs)
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/matplotlib/axes/_base.py", line 4448, in get_tightbbox
+    ba = martist._get_tightbbox_for_layout_only(axis, renderer)
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/matplotlib/artist.py", line 1408, in _get_tightbbox_for_layout_only
+    return obj.get_tightbbox(*args, **{**kwargs, "for_layout_only": True})
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/matplotlib/axis.py", line 1371, in get_tightbbox
+    self._update_label_position(renderer)
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/matplotlib/axis.py", line 2648, in _update_label_position
+    spinebbox = spine.get_window_extent()
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/matplotlib/spines.py", line 158, in get_window_extent
+    drawn_ticks = self.axis._update_ticks()
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/matplotlib/axis.py", line 1308, in _update_ticks
+    minor_ticks = self.get_minor_ticks(len(minor_locs))
+KeyboardInterrupt
+encoding src: torch.Size([16, 32, 51])

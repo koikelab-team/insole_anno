@@ -103,62 +103,62 @@ def denormalize_output(output, min_npy, max_npy):
     max_values = np.load(max_npy)
     return (output + 1) / 2 * (max_values - min_values) + min_values
 
-# def log_results(insole, pred, epoch, is_test=False):
-#     insole = insole.cpu().detach().numpy()
-#     pred = pred.cpu().detach().numpy()
-    
-#     insole = denormalize_output(insole, min_npy='./dataset/insole_min.npy', max_npy='./dataset/insole_max.npy')
-#     pred = denormalize_output(pred, min_npy='./dataset/insole_min.npy', max_npy='./dataset/insole_max.npy')
-  
-#     insole = insole[0]
-#     pred = pred[0]
-#     fig, axs = plt.subplots(2, 1)
-#     axs[0].imshow(insole.T, aspect='auto')
-#     axs[1].imshow(pred.T, aspect='auto')
-#     if is_test:
-#         plt.savefig(f"results/test_{epoch}.png")
-#     else:
-#         plt.savefig(f"results/train_{epoch}.png")
-#     plt.close()
-
-
 def log_results(insole, pred, epoch, is_test=False):
-    """
-    可视化真实值与预测值的时序曲线图。
-
-    Parameters:
-    - insole: 真实值 Tensor, shape (batch_size, seq_len, channels)
-    - pred: 模型预测值 Tensor, shape (batch_size, seq_len, channels)
-    - epoch: 当前 epoch
-    - is_test: 是否为测试集结果
-    """
     insole = insole.cpu().detach().numpy()
     pred = pred.cpu().detach().numpy()
     
-    # 反归一化
     insole = denormalize_output(insole, min_npy='./dataset/insole_min.npy', max_npy='./dataset/insole_max.npy')
     pred = denormalize_output(pred, min_npy='./dataset/insole_min.npy', max_npy='./dataset/insole_max.npy')
-
-    # 取第一个样本进行可视化
-    insole = insole[0]  # shape (seq_len, channels)
-    pred = pred[0]      # shape (seq_len, channels)
-
-    # 创建曲线图
-    fig, axs = plt.subplots(insole.shape[1], 1, figsize=(10, 20), sharex=True, sharey=True)
-    fig.suptitle(f"{'Test' if is_test else 'Train'} Results - Epoch {epoch}", fontsize=16)
-
-    for i in range(insole.shape[1]):  # 遍历每个通道
-        axs[i].plot(insole[:, i], label='Ground Truth', color='blue', linestyle='-')
-        axs[i].plot(pred[:, i], label='Prediction', color='red', linestyle='--')
-        axs[i].set_ylabel(f"Channel {i+1}")
-        axs[i].legend(loc='upper right')
-
-    axs[-1].set_xlabel("Time Step")
-    plt.tight_layout(rect=[0, 0, 1, 0.96])
-
-    # 保存图像
+  
+    insole = insole[0]
+    pred = pred[0]
+    fig, axs = plt.subplots(2, 1)
+    axs[0].imshow(insole.T, aspect='auto')
+    axs[1].imshow(pred.T, aspect='auto')
     if is_test:
         plt.savefig(f"results/test_{epoch}.png")
     else:
         plt.savefig(f"results/train_{epoch}.png")
     plt.close()
+
+
+# def log_results(insole, pred, epoch, is_test=False):
+#     """
+#     可视化真实值与预测值的时序曲线图。
+
+#     Parameters:
+#     - insole: 真实值 Tensor, shape (batch_size, seq_len, channels)
+#     - pred: 模型预测值 Tensor, shape (batch_size, seq_len, channels)
+#     - epoch: 当前 epoch
+#     - is_test: 是否为测试集结果
+#     """
+#     insole = insole.cpu().detach().numpy()
+#     pred = pred.cpu().detach().numpy()
+    
+#     # 反归一化
+#     insole = denormalize_output(insole, min_npy='./dataset/insole_min.npy', max_npy='./dataset/insole_max.npy')
+#     pred = denormalize_output(pred, min_npy='./dataset/insole_min.npy', max_npy='./dataset/insole_max.npy')
+
+#     # 取第一个样本进行可视化
+#     insole = insole[0]  # shape (seq_len, channels)
+#     pred = pred[0]      # shape (seq_len, channels)
+
+#     # 创建曲线图
+#     fig, axs = plt.subplots(insole.shape[1], 1, figsize=(10, 20), sharex=True, sharey=True)
+#     fig.suptitle(f"{'Test' if is_test else 'Train'} Results - Epoch {epoch}", fontsize=16)
+
+#     for i in range(insole.shape[1]):  # 遍历每个通道
+#         axs[i].plot(insole[:, i], label='Ground Truth', color='blue', linestyle='-')
+#         axs[i].plot(pred[:, i], label='Prediction', color='red', linestyle='-')
+#         axs[i].set_ylabel(f"Channel {i+1}")
+#         axs[i].legend(loc='upper right')
+
+#     axs[-1].set_xlabel("Time Step")
+#     plt.tight_layout(rect=[0, 0, 1, 0.96])
+
+#     # 保存图像
+#     if is_test:
+#         plt.savefig(f"results/test_{epoch}.png")
+#     else:
+#         plt.savefig(f"results/train_{epoch}.png")
+#     plt.close()

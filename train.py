@@ -6,6 +6,7 @@ import numpy as np
 import os
 import torch.optim as optim
 from models import InsoleAnno, InsoleLSTM, InsoleCNN, InsoleCNNRNN
+from networks.test_models import TransformerSeq2Seq
 from tools import denormalize_output, plot_insole_heatmap_gif, log_results
 from torch.utils.data import DataLoader, Dataset
 import matplotlib.pyplot as plt
@@ -23,7 +24,7 @@ def train(model, train_loader, test_loader, criterion, optimizer, num_epochs=300
             # print('x', x, 'y', y)
             optimizer.zero_grad()
             # print('x', x)
-            outputs = model(x)
+            outputs = model(x, y)
             # print('outputs', outputs)
             t_loss = temporal_consistency_loss(outputs, y)
             mse_loss = criterion(outputs, y)
@@ -51,7 +52,7 @@ def test(model, dataloader, criterion, device="cuda:0"):
     for i, data in enumerate(dataloader):
         x, y = data
         x, y = x.to(device), y.to(device)
-        outputs = model(x)
+        outputs = model(x, y)
         t_loss = temporal_consistency_loss(outputs, y)
         mse_loss = criterion(outputs, y)
         loss = t_loss + mse_loss
@@ -101,7 +102,10 @@ if __name__ == "__main__":
     test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=True)
 
     wandb.init(project="insole-anno")
-    model = InsoleAnno(input_dim=input_dim, output_dim=output_dim, seq_len=seq_len)
+    # model = InsoleAnno(input_dim=input_dim, output_dim=output_dim, seq_len=seq_len)
+    # encoder = EncoderV2(input_dim=51, d_model=128, n_layers=6, n_head=8, d_k=64, d_v=64, d_inner=256)
+    # decoder = Decoder(output_dim=32, d_model=128, n_layers=6, n_head=8, d_k=64, d_v=64, d_inner=256)
+    model = TransformerSeq2Seq(input_dim=51, output_dim=32, d_model=512)
     criterion = nn.MSELoss()  
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 

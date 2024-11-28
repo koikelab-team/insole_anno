@@ -1,0 +1,11 @@
+Epoch [1/100]:   0%|                                                                                                                                                                                                                                                  | 0/26 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/mnt/hdd/pengy/insole_anno/train.py", line 112, in <module>
+    train(model, train_loader, test_loader, criterion, optimizer, num_epochs=num_epochs, device="cuda:0" if torch.cuda.is_available() else "cpu")
+  File "/mnt/hdd/pengy/insole_anno/train.py", line 27, in train
+    outputs = model(x)
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/pengy/.conda/envs/torch/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+TypeError: Seq2Seq.forward() missing 3 required positional arguments: 'src_mask', 'trg_seq', and 'trg_mask'
